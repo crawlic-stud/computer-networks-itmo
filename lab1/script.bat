@@ -31,9 +31,10 @@ if "%automatic%"=="y" (
 
 echo ------------------------------------------------
 echo Your settings after:
-netsh interface ip show addresses %interface%
-netsh interface ip show dns %interface%
+ipconfig /all
+@REM netsh interface ip show addresses %interface%
+@REM netsh interface ip show dns %interface%
 
 rem revert all back
-netsh interface ipv4 set address %interface% dhcp
-netsh interface ipv4 set dns %interface% dhcp
+@REM netsh interface ip set address %interface% dhcp
+@REM netsh interface ip set dns %interface% dhcp

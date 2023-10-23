@@ -42,7 +42,7 @@ if ($automatic -eq "y") {
 Write-Separator
 Write-Host "Information about host after configuring:"
 
-netsh interface ip show config | find "$interfaceName"
+ipconfig /all
 
 # получение объекта сетевого адаптера 
 $adapter = Get-NetAdapter | Where-Object { $_.Status -eq "Up" -and $_.Name -eq $interfaceName }
