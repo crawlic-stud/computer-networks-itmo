@@ -5,19 +5,19 @@ int FastEthernet 0/0
 ip address 9.11.0.254 255.255.0.0
 no shut
 int FastEthernet 1/0
-ip address 62.18.0.1 255.254.0.0
+ip address 62.18.0.254 255.254.0.0
 no shut
 int FastEthernet 2/0
-ip address 62.20.0.1 255.254.0.0
+ip address 62.20.0.254 255.254.0.0
 no shut
 int FastEthernet 3/0
-ip address 62.22.0.1 255.254.0.0
+ip address 62.22.0.254 255.254.0.0
 no shut
 int FastEthernet 4/0
-ip address 62.24.0.1 255.254.0.0
+ip address 62.24.0.254 255.254.0.0
 no shut
 int FastEthernet 5/0
-ip address 62.26.0.1 255.254.0.0
+ip address 62.26.0.254 255.254.0.0
 no shut
 int FastEthernet 6/0
 ip address 9.9.0.253 255.255.0.0
