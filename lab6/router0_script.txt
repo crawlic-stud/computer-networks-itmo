@@ -1,0 +1,11 @@
+int fa0/1
+ip address 1.2.3.1 255.255.255.252
+exit
+ip route 0.0.0.0 0.0.0.0 1.2.3.2
+
+ip access-list standard nat
+permit 10.10.0.0 0.0.0.255
+permit 10.50.0.0 0.0.0.255
+permit 10.60.0.0 0.0.0.255
+
+ip nat inside source list nat interface fa0/1 overload

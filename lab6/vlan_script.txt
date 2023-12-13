@@ -1,0 +1,29 @@
+ip dhcp pool vlan10
+network 10.10.0.0 255.255.255.0
+default-router 10.10.0.254
+exit
+
+ip dhcp pool vlan20
+network 10.20.0.0 255.255.255.0
+default-router 10.20.0.254
+exit
+
+ip dhcp pool vlan30
+network 10.30.0.0 255.255.255.0
+default-router 10.30.0.254
+exit
+
+ip dhcp pool vlan40
+network 10.40.0.0 255.255.255.0
+default-router 10.40.0.254
+exit
+
+ip dhcp pool vlan50
+network 10.50.0.0 255.255.255.0
+default-router 10.50.0.254
+exit
+
+ip dhcp pool vlan60
+network 10.60.0.0 255.255.255.0
+default-router 10.60.0.254
+exit

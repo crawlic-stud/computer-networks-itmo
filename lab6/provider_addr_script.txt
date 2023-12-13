@@ -1,0 +1,7 @@
+interface fa0/0
+ip address 1.2.3.2 255.255.255.252
+exit
+
+interface fa0/1
+ip address 1.3.5.1 255.255.255.252
+
