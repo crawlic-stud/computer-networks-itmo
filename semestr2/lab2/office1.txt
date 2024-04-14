@@ -1,0 +1,12 @@
+interface range FastEthernet0/1 - 10
+switchport access vlan 80
+interface range FastEthernet0/11 - 19
+switchport access vlan 20
+
+interface range FastEthernet0/1 - 5
+switchport access vlan 30
+interface range FastEthernet0/6 - 8
+switchport access vlan 10
+
+interface range GigabitEthernet0/1 - 2
+channel-group 1 mode on

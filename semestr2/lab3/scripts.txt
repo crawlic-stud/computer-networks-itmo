@@ -1,0 +1,43 @@
+interface vlan 10
+ip address 10.10.0.254 255.255.255.0
+ip helper-address 10.70.0.1
+
+interface vlan 20
+ip address 10.20.0.254 255.255.255.0
+ip helper-address 10.70.0.1
+
+interface vlan 30
+ip address 10.30.0.254 255.255.255.0
+ip helper-address 10.70.0.1
+
+interface vlan 40
+ip address 10.40.0.254 255.255.255.0
+ip helper-address 10.70.0.1
+
+interface vlan 50
+ip address 10.50.0.254 255.255.255.0
+ip helper-address 10.70.0.1
+
+interface vlan 60
+ip address 10.60.0.254 255.255.255.0
+ip helper-address 10.70.0.1
+
+interface vlan 70
+ip address 10.70.0.254 255.255.255.0
+ip helper-address 10.70.0.1
+
+interface vlan 80
+ip address 10.80.0.254 255.255.255.0
+ip helper-address 10.70.0.1
+
+
+interface FastEthernet0/3
+switchport trunk encapsulation dot1q
+switchport mode trunk
+interface FastEthernet0/23
+switchport mode trunk
+interface FastEthernet0/24
+switchport mode trunk
+
+interface FastEthernet0/1
+switchport access vlan 70
